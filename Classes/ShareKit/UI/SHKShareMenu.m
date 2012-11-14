@@ -295,6 +295,7 @@
 - (void)cancel
 {
 	[[SHK currentHelper] hideCurrentViewControllerAnimated:YES];
+    //[self dismissModalViewControllerAnimated:YES];
 }
 
 - (void)edit

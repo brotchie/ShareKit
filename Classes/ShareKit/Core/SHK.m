@@ -183,10 +183,10 @@ BOOL SHKinit;
 		{
 			self.isDismissingView = YES;
 			[[currentView parentViewController] dismissModalViewControllerAnimated:animated];
-		}
-		
-		else
-			self.currentView = nil;
+		} else {
+			self.isDismissingView = YES;
+            [currentView dismissModalViewControllerAnimated:animated];
+        }
 	}
 }
 
